@@ -1,0 +1,87 @@
+/* Container for the search bar */
+.search-bar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  flex-direction: column;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f4f8; /* Light background color for the whole page */
+  height: 100vh; /* Full height for the container */
+  padding: 20px;
+}
+
+/* Styling the search input */
+.search-input {
+  width: 100%;
+  max-width: 500px;
+  padding: 15px 20px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: 2px solid #ff7f50; /* Coral border color */
+  border-radius: 25px;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  outline: none;
+  background-color: #ffffff; /* White background for the input */
+  color: #333; /* Dark text color */
+}
+
+/* Add a hover and focus effect */
+.search-input:hover,
+.search-input:focus {
+  border-color: #32cd32; /* Lime green for focus and hover */
+  box-shadow: 0px 4px 12px rgba(50, 205, 50, 0.3); /* Lime shadow effect */
+}
+
+/* Suggestions dropdown */
+.suggestions-list {
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #ffffff; /* White background */
+  margin-top: 5px;
+  list-style-type: none;
+  padding: 0;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
+  max-height: 200px;
+  overflow-y: auto; /* Scroll if too many suggestions */
+}
+
+/* Individual suggestion item */
+.suggestion-item {
+  padding: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #333; /* Dark text color */
+}
+
+/* Hover effect on suggestion item */
+.suggestion-item:hover {
+  background-color: #87ceeb; /* Light sky blue background on hover */
+}
+
+/* Active suggestion item (using keyboard navigation) */
+.active-suggestion {
+  background-color: #32cd32; /* Lime green for active item */
+  color: #ffffff; /* White text color */
+}
+
+/* Center the result display */
+.result {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+  color: #ff7f50; /* Coral color for result text */
+}
+
+/* Add a gradient background to the body */
+body {
+  background: linear-gradient(to right, #87ceeb, #ff7f50); /* Light sky blue to coral gradient */
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
